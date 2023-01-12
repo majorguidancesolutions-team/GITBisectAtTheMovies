@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GITBisectAtTheMovies", "GITBisectAtTheMovies\GITBisectAtTheMovies.csproj", "{B63563A9-B0B7-47D8-8B4B-E70B0A5E92BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B63563A9-B0B7-47D8-8B4B-E70B0A5E92BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63563A9-B0B7-47D8-8B4B-E70B0A5E92BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63563A9-B0B7-47D8-8B4B-E70B0A5E92BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63563A9-B0B7-47D8-8B4B-E70B0A5E92BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24EE4EC5-2A66-4F12-8EA1-F90257BBB61B}
+	EndGlobalSection
+EndGlobal
