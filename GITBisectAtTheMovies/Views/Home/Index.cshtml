@@ -7,20 +7,36 @@
     <h1 class="display-4">Top 250 Movies of all time</h1>
 </div>
 
-<table>
+<table id="moviesDataTable">
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Rating</th>
+            <th style="width:10%">Image</th>
+            <th style="width:5%">Rank</th>
+            <th style="width:40%">Title</th>
+            <th style="width:30%">Crew</th>
+            <th style="width:5%">Year</th>
+            <th style="width:5%">Rating</th>
+            <th style="width:5%">Number of Ratings</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var movie in Model) {
             <tr>
-                <td>@Html.DisplayFor(x => movie.Id)</td>
-                <td>@Html.DisplayFor(x => movie.Title)</td>
-                <td>@Html.DisplayFor(x => movie.MPAARating)</td>
+                <td>
+                    @Html.HiddenFor(x => movie.id)
+                    <img class="make-image-pretty" src="@movie.image" alt="the movie poster for @movie.title" />
+                </td>
+                <td>
+                    @Html.DisplayFor(x => movie.rank)
+                </td>
+                <td>
+                    @Html.HiddenFor(x => movie.fullTitle)
+                    @Html.DisplayFor(x => movie.title)
+                </td>
+                <td>@Html.DisplayFor(x => movie.crew)</td>
+                <td>@Html.DisplayFor(x => movie.year)</td>
+                <td>@Html.DisplayFor(x => movie.imDbRating)</td>
+                <td>@Html.DisplayFor(x => movie.imDbRatingCount)</td>
             </tr>
         }
     </tbody>
@@ -30,7 +46,7 @@
 {
     <script>
         $(function(){
-            alert("Jquery Works");
+            $("#moviesDataTable").DataTable();
         });
     </script>
 }
