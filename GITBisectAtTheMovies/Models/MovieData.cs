@@ -14,7 +14,9 @@
             if (Movies == null || !Movies.Any())
             {
                 Movies.Add(new Movie() { 
-                    Id = 1, Description = "Dinosaurs", MPAARating = "PG-13", Title = "Jurassic Park", Year = 1993
+                    id = "1", crew = "Sam Neill, Jeff Goldblum, Laura Dern"
+                    , fullTitle = "Jurassic Park (1993)", image = "", imDbRating = "9.4", imDbRatingCount = "10000"
+                    , rank = "25", title = "Jurassic Park", year = "1993"
                 });
             }
         }
