@@ -7,12 +7,14 @@
     <h1 class="display-4">Top 250 Movies of all time</h1>
 </div>
 
-<table>
+<table id="moviesDataTable">
     <thead>
         <tr>
             <th>Id</th>
             <th>Title</th>
+            <th>Description</th>
             <th>Rating</th>
+            <th>Year</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +22,9 @@
             <tr>
                 <td>@Html.DisplayFor(x => movie.Id)</td>
                 <td>@Html.DisplayFor(x => movie.Title)</td>
+                <td>@Html.DisplayFor(x => movie.Description)</td>
                 <td>@Html.DisplayFor(x => movie.MPAARating)</td>
+                <td>@Html.DisplayFor(x => movie.Year)</td>
             </tr>
         }
     </tbody>
@@ -30,7 +34,7 @@
 {
     <script>
         $(function(){
-            alert("Jquery Works");
+            $("#moviesDataTable").DataTable();
         });
     </script>
 }
