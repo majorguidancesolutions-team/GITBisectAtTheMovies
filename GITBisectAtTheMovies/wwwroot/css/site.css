@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.make-image-pretty {
+    max-height: 150px;
+}
