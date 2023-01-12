@@ -15,7 +15,8 @@ namespace GITBisectAtTheMovies.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var md = new MovieData();
+            return View(md.Movies);
         }
 
         public IActionResult Privacy()
