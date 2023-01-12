@@ -7,4 +7,9 @@
     <UserSecretsId>479c5198-2ab2-4df5-9ad8-20ae747920c4</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\datatables\css\" />
+    <Folder Include="wwwroot\lib\datatables\js\" />
+  </ItemGroup>
+
 </Project>
