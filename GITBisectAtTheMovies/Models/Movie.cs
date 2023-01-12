@@ -1,5 +1,10 @@
 ﻿namespace GITBisectAtTheMovies.Models
 {
+    public class AllMovies
+    {
+        public List<Movie> items { get; set; }
+    }
+
     public class Movie
     {
         public string id { get; set; }
