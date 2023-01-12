@@ -10,13 +10,13 @@
 <table id="moviesDataTable">
     <thead>
         <tr>
-            <th>Image</th>
-            <th>Rank</th>
-            <th>Title</th>
-            <th>Crew</th>
-            <th>Year</th>
-            <th>Rating</th>
-            <th>Number of Ratings</th>
+            <th style="width:10%">Image</th>
+            <th style="width:5%">Rank</th>
+            <th style="width:40%">Title</th>
+            <th style="width:30%">Crew</th>
+            <th style="width:5%">Year</th>
+            <th style="width:5%">Rating</th>
+            <th style="width:5%">Number of Ratings</th>
         </tr>
     </thead>
     <tbody>
@@ -24,7 +24,7 @@
             <tr>
                 <td>
                     @Html.HiddenFor(x => movie.id)
-                    <img src="@movie.image" alt="the movie poster for @movie.title" />
+                    <img class="make-image-pretty" src="@movie.image" alt="the movie poster for @movie.title" />
                 </td>
                 <td>
                     @Html.DisplayFor(x => movie.rank)
