@@ -8,6 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\imdbAPITop250MoviesTruncated.dat" />
+    <None Remove="assets\Notes.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\imdbAPITop250MoviesTruncated.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Notes.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\lib\datatables\css\" />
     <Folder Include="wwwroot\lib\datatables\js\" />
   </ItemGroup>
