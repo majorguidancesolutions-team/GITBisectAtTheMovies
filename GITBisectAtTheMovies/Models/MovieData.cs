@@ -33,7 +33,16 @@ namespace GITBisectAtTheMovies.Models
                     movies = allMovies.items;
                 }
             }
-            
+            else
+            {
+                //try to use the local file
+                var fileData = File.ReadAllText(@"assets/imdbAPITop250MoviesTruncated.dat");
+                var allMovies = JsonSerializer.Deserialize<AllMovies>(fileData);
+                if (allMovies?.items != null && allMovies.items.Any())
+                {
+                    movies = allMovies.items;
+                }
+            }
 
             if (movies.Count == 0)
             {

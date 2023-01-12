@@ -1,0 +1,2 @@
+This data is partial (less 100 or so) and was retrieved from the IMDB API.  I'm only storing it here so that you can use this project without having to make a call.
+If you want to make a quick call to the actual API, go to https://imdb-api.com/ link and set up your account.
